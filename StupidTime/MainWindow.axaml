@@ -1,0 +1,83 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:stupidTime="clr-namespace:StupidTime"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="500"
+        Height="400" Width="300"
+        CanResize="False"
+        x:Class="StupidTime.MainWindow"
+        Title="Stupid Time"
+        Background="{StaticResource BackgroundBrush}"
+        Padding="25"
+        x:DataType="stupidTime:MainWindowViewModel">
+    <Window.Styles>
+        <Style Selector="Arc">
+            <Setter Property="StrokeThickness" Value="10" />
+            <Setter Property="StartAngle" Value="0" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="RenderTransform">
+                <RotateTransform Angle="-90" CenterX="0" CenterY="0" />
+            </Setter>
+            <Setter Property="Transitions">
+                <Transitions>
+                    <DoubleTransition 
+                        Property="SweepAngle"
+                        Duration="0:0:0.25"
+                        Easing="SineEaseInOut" />
+                </Transitions>
+            </Setter>
+        </Style>
+    </Window.Styles>
+    <DockPanel VerticalAlignment="Stretch"
+               HorizontalAlignment="Stretch">
+        <TextBlock
+            DockPanel.Dock="Top"
+            FontSize="24"
+            FontWeight="UltraLight"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            Text="{Binding RenderedTime}" />
+
+        <DockPanel
+            DockPanel.Dock="Bottom"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Center">
+            <Button
+                DockPanel.Dock="Left"
+                Content="{Binding ButtonText}"
+                Command="{Binding StartStopCommand}" />
+
+            <Button
+                DockPanel.Dock="Right"
+                Content="Reset"
+                Command="{Binding ResetCommand}" />
+        </DockPanel>
+
+        <Grid
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+            <Arc
+                Stroke="{StaticResource SecondsBrush}"
+                SweepAngle="{Binding SecondsSweepAngle}"
+                Width="220"
+                Height="220">
+            </Arc>
+
+            <Arc
+                Stroke="{StaticResource MinutesBrush}"
+                SweepAngle="{Binding MinutesSweepAngle}"
+                Width="200"
+                Height="200">
+            </Arc>
+
+            <Arc
+                Stroke="{StaticResource HoursBrush}"
+                SweepAngle="{Binding HoursSweepAngle}"
+                Width="180"
+                Height="180">
+            </Arc>
+        </Grid>
+    </DockPanel>
+</Window>

@@ -1,0 +1,17 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="StupidTime.App"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+             <Application.Resources>
+                 <SolidColorBrush x:Key="BackgroundBrush" Color="#064273" />
+                 <SolidColorBrush x:Key="SecondsBrush" Color="#def3f6" />
+                 <SolidColorBrush x:Key="MinutesBrush" Color="#7fcdff" />
+                 <SolidColorBrush x:Key="HoursBrush" Color="#1da2d8" />
+             </Application.Resources>
+             
+    <Application.Styles>
+        <FluentTheme />
+    </Application.Styles>
+</Application>

@@ -2,7 +2,7 @@
 using Avalonia;
 using Avalonia.ReactiveUI;
 
-namespace StupidTime;
+namespace SimpleTime;
 
 class Program
 {

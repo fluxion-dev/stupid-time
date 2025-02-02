@@ -3,7 +3,7 @@ using System.Reactive;
 using Avalonia.Threading;
 using ReactiveUI;
 
-namespace StupidTime;
+namespace SimpleTime;
 
 public class MainWindowViewModel : ReactiveObject
 {

@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace StupidTime;
+namespace SimpleTime;
 
 public partial class MainWindow : Window
 {

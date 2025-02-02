@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="HelloAvalonia/App.axaml" value="HelloAvalonia/HelloAvalonia.csproj" />
+        <entry key="HelloAvalonia/MainWindow.axaml" value="HelloAvalonia/HelloAvalonia.csproj" />
+        <entry key="SimpleTime/MainWindow.axaml" value="SimpleTime/SimpleTime.csproj" />
+        <entry key="StupidTime/App.axaml" value="StupidTime/StupidTime.csproj" />
+        <entry key="StupidTime/MainWindow.axaml" value="StupidTime/StupidTime.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

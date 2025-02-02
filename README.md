@@ -1,4 +1,4 @@
-# Stupid Time
+# Simple Time
 
 This is a simple timer built over a couple of hours using C# and Avalonia.
 
@@ -16,5 +16,5 @@ dotnet build --configuration Release
 ## Run
 After building the application
 ```bash
-./StupidTime/bin/Release/net9.0/StupidTime
+./SimpleTime/bin/Release/net9.0/SimpleTime
 ```

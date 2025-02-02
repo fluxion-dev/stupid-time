@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidTime", "StupidTime\StupidTime.csproj", "{910A7749-B53B-4592-981D-18DFF579E954}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTime", "SimpleTime\SimpleTime.csproj", "{910A7749-B53B-4592-981D-18DFF579E954}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
